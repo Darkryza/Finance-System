@@ -1,6 +1,13 @@
 @extends('layout.layout')
+@section('css')
+<link rel="stylesheet" href="{{ asset('css/register.css') }}">
+@endsection
 @section('content')
-<h1>Register page
-</h1>
-<div class="loader"></div>
+<div class="register-container">
+    <div class="app-name">
+        <img src="{{ asset('img/icon.png') }}" alt="">
+        <h1>Finance System</h1>
+    </div>
+    <h1>Register</h1>
+</div>
 @endsection

@@ -1,4 +1,7 @@
 @extends('layout.layout')
+@section('css')
+<link rel="stylesheet" href="{{ asset('css/login.css') }}">
+@endsection
 @section('content')
 <div class="login-container">
     <div class="app-name">
@@ -17,5 +20,4 @@
     </div>
     <a href="/register" class="register-button">Register</a>
 </div>
-<div class="loader"></div>
 @endsection
