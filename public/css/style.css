@@ -19,9 +19,19 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    transition: 0.3s ease;
 }
 .app-name{
+    display: flex;
+    align-items: center;
+    gap: 10px;
     margin-bottom: 50px;
+}
+.app-name img{
+    width: 50px;
+}
+.app-name h1{
+    text-align: center;
 }
 .login-inputs{
     border: 1px solid var(--main);
@@ -63,9 +73,55 @@ body{
 .login-inputs form button:hover{
     background-color: rgb(18, 124, 129);
 }
-
+.register-button{
+    width: 50%;
+    padding: 10px;
+    background-color: #9E0000;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+    transition: 0.3s ease;
+}
+.register-button:hover{
+    background-color: #430a0a;
+}
 @media screen and (max-width: 768px){
     .login-inputs{
         width: 80%;
+    }
+}
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #171616;
+    transition: opacity 0.75s, visibility 0.75s;
+}
+.loader-hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+.loader::after{
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddddd;
+    border-top-color: var(--main);
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+}
+@keyframes loading{
+    from{
+        transform: rotate(0turn);
+    }
+    to{
+        transform: rotate(1turn);
     }
 }
