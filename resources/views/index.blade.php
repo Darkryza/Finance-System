@@ -17,5 +17,4 @@
     </div>
     <a href="/register" class="register-button">Register</a>
 </div>
-<div class="loader"></div>
 @endsection

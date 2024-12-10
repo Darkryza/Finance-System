@@ -125,3 +125,14 @@ body{
         transform: rotate(1turn);
     }
 }
+.register-container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 50px;
+    padding: 50px;
+}
+.register-container h1{
+    text-align: center;
+}

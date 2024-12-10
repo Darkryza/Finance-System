@@ -10,6 +10,7 @@
 </head>
 <body>
     @yield('content')
+    <div class="loader"></div>
     <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
