@@ -1,6 +1,10 @@
 @extends('layout.layout')
+@section('css')
+<link rel="stylesheet" href="{{ asset('css/register.css') }}">
+@endsection
 @section('content')
 <div class="register-container">
+<<<<<<< HEAD
     <h1>Finance System</h1>
     <div class="register-form">
         <h2>Register</h2>
@@ -19,5 +23,12 @@
             <button type="submit">Submit</button>
         </form>
     </div>
+=======
+    <div class="app-name">
+        <img src="{{ asset('img/icon.png') }}" alt="">
+        <h1>Finance System</h1>
+    </div>
+    <h1>Register</h1>
+>>>>>>> 52cf1b97393a6ba12ec70219dc450e7fdf404e01
 </div>
 @endsection
